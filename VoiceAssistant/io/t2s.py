@@ -15,10 +15,11 @@ text = "hello, this is a test."
 # Generate the speech
 #print(tts.voice_converter.vc_config.audio.output_sample_rate)
 
-wav = tts.tts(text)
 
-wav = np.array(wav, dtype=np.float32)
+def play(txt: str):
+    wav = tts.tts(text)
 
-# Play the audio
-sd.play(wav, samplerate=tts.synthesizer.output_sample_rate)
-sd.wait()
+    wav = np.array(wav, dtype=np.float32)
+
+    sd.play(wav, samplerate=tts.synthesizer.output_sample_rate)
+    sd.wait()
