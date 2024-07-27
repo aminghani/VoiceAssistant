@@ -3,9 +3,8 @@ version: "3.1"
 intents:
   - greet
   - goodbye
-  - affirm
-  - deny
-  - bot_challenge
+  - affirmative
+  - negative
   - command
 
 entities:
@@ -38,22 +37,19 @@ slots:
 
 actions:
   - action_on_command
-  
+  - action_make_sure
+
 responses:
   utter_greet:
   - text: "Hey! Nice to meet you"
-  utter_turn_on:
-  - text: "I turned it on!"
-  utter_turn_off:
-  - text: "I turned it off!"
-  utter_dim:
-  - text: "I dimmed it!"
   utter_goodbye:
   - text: "Bye for now"
   utter_iamabot:
   - text: "I am a voice assistant for your home."
+  utter_didnotunderstand:
+  - text: "sorry. i did not understand your command."
   utter_command:
-  - text: "ok, doing the command"
+  - text: "ok, doing that."
 
 session_config:
   session_expiration_time: 60

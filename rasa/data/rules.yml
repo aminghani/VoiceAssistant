@@ -1,7 +1,6 @@
 version: "3.1"
 
 rules:
-
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
@@ -12,22 +11,3 @@ rules:
   - intent: greet
   - action: utter_greet
 
-- rule: dim
-  steps:
-  - intent: dim
-  - action: utter_dim
-
-- rule: answer the turn off
-  steps:
-  - intent: turn_off
-  - action: utter_turn_off
-
-- rule: Say 'I am a voice assistant' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
-
-- rule: Say Ok to command
-  steps:
-  - intent: command
-  - action: utter_command

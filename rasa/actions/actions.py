@@ -60,8 +60,39 @@ class ActionControlLights(Action):
 
         return []
 """
+class ActionOnCommand(Action):
+    def name(self) -> Text:
+        return "action_make_sure"
 
-class ActionTurnOn(Action):
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        action = tracker.get_slot("action")
+        thing = tracker.get_slot("thing")
+        place = tracker.get_slot("place")
+        time = tracker.get_slot("time")
+
+        if place == None:
+            place = 'current room'
+        if time == None:
+            time = 'now'
+
+        output = {
+            "action": action,
+            "thing": thing,
+            "place": place, 
+            "time": time
+        }
+
+        
+        print(f'====> {output}')
+        response = f"do you want to {action} the {thing} in {place} at {time}? "
+        dispatcher.utter_message(text=response)
+
+        return []
+    
+class ActionOnCommand(Action):
     def name(self) -> Text:
         return "action_on_command"
 
@@ -85,6 +116,6 @@ class ActionTurnOn(Action):
 
         print(f'====> {output}')
         response = f"Certainly!"
-        dispatcher.utter_message(text=response)
+        dispatcher.utter_message(text=output)
 
         return []

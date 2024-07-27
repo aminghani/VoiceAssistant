@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-action",
+      "2": "I-action",
+      "3": "L-action",
+      "4": "U-action",
+      "5": "B-place",
+      "6": "I-place",
+      "7": "L-place",
+      "8": "U-place",
+      "9": "B-thing",
+      "10": "I-thing",
+      "11": "L-thing",
+      "12": "U-thing",
+      "13": "B-time",
+      "14": "I-time",
+      "15": "L-time",
+      "16": "U-time",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-action": 1,
+      "I-action": 2,
+      "L-action": 3,
+      "U-action": 4,
+      "B-place": 5,
+      "I-place": 6,
+      "L-place": 7,
+      "U-place": 8,
+      "B-thing": 9,
+      "I-thing": 10,
+      "L-thing": 11,
+      "U-thing": 12,
+      "B-time": 13,
+      "I-time": 14,
+      "L-time": 15,
+      "U-time": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

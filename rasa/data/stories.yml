@@ -1,7 +1,18 @@
 version: "3.1"
 
-stories: 
-- story: turning on
+stories:
+
+- story: understand path
   steps:
-  - intent: turn_on
-  - action: action_turn_on
+  - intent: command
+  - action: action_make_sure
+  - intent: affirmative
+  - action: utter_command
+
+- story: did not understand path
+  steps:
+  - intent: command
+  - action: action_make_sure
+  - intent: negative
+  - action: utter_didnotunderstand
+
