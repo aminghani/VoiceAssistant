@@ -210,3 +210,11 @@ nlu:
     - plz that's not right that's not correct
 - intent: command
   examples: |
+    - Please [turn on](action) the [water meters](thing) in the [family room](place) at [monday](time).
+    - Could you [turn on](action) the [security cameras](thing) in the [closet](place) at [11:59 pm](time)?
+    - At [3 pm](time), the [safes](thing) in the [laundry room](place) will be [start](action).
+    - If it's [monday](time), [change](action) the [air purifiers](thing) in the [basement](place).
+    - The [doorbells](thing) in the [utility room](place) will be [show](action) at [monday](time).
+    - The [toasters](thing) in the [family room](place) should be [turn on](action) at [12:00 am](time).
+    - The [motion sensors](thing) in the [pantry](place) will be [play](action) at [12:00 am](time).
+    - '[turn on](action) the [screens](thing) in the [gym](place) at [wednesday](time).'

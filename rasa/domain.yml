@@ -14,7 +14,7 @@ entities:
   - time
 
 slots:
-  loactionc:
+  action:
     type: text
     mappings:
     - type: from_entity
