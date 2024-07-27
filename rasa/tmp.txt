@@ -1,4 +1,4 @@
-- [turn on](action) [pantry](loc) [pot](lights) time
+    - [turn on](action) [pantry](place) [pot](thing) time
     - [turn on](action)  [under cabinet](lights) in the [pantry](loc) time
     - [turn on](action)  [living room](loc) [task lights](lights) time
     - [turn on](action)  [lights](lights) in the [basement](loc) time
