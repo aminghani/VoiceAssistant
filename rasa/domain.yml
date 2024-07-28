@@ -36,8 +36,9 @@ slots:
       entity: time
 
 actions:
-  - action_on_command
+  - action_doing
   - action_make_sure
+  - action_restart
 
 responses:
   utter_greet:
@@ -48,8 +49,8 @@ responses:
   - text: "I am a voice assistant for your home."
   utter_didnotunderstand:
   - text: "sorry. i did not understand your command."
-  utter_command:
-  - text: "ok, doing that."
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that.
 
 session_config:
   session_expiration_time: 60
