@@ -19,10 +19,13 @@ def send_message(message):
         # Parse the JSON response
         bot_responses = response.json()
         
-        # Extract and return the bot's messages
-        return [resp['text'] for resp in bot_responses if 'text' in resp]
+        #print(f"bot_responses: {bot_responses}")
+        control_json = None
+        if len(bot_responses) > 1 and bot_responses[1]['custom'] is not None:
+            control_json = bot_responses[1]['custom']
+        return bot_responses[0]['text'], control_json 
     else:
-        return [f"Error: Received status code {response.status_code}"]
+        return f"Error: Received status code {response.status_code}", None
 
 """
 # Example usage

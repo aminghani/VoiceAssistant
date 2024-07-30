@@ -30,6 +30,7 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import Restarted
+from rasa_sdk.events import SlotSet
 import json
 
 """
@@ -74,15 +75,24 @@ class ActionOnCommand(Action):
         place = tracker.get_slot("place")
         time = tracker.get_slot("time")
 
-        if place == None:
+        if action is None or thing is None:
+            response = f"sorry, i did not understand your request."
+            dispatcher.utter_message(text=response)
+            return []
+        
+        events = []
+
+        if place is None:
             place = 'current room'
-        if time == None:
+            events.append(SlotSet('place', place))
+        if time is None:
             time = 'now'
+            events.append(SlotSet('time', time))
 
         response = f"do you want to {action} the {thing} in {place} at {time}? "
         dispatcher.utter_message(text=response)
 
-        return []
+        return events
 
 class ActionOnCommand(Action):
     def name(self) -> Text:
@@ -117,8 +127,7 @@ class ActionOnCommand(Action):
                 "time": time
             }
 
-            print(f'====> {output}')
             response = f"ok, doing your request!"
-            dispatcher.utter_message(text=response)
+            dispatcher.utter_message(text=response, json_message=output)
 
-        return []
+        return [SlotSet('action', None), SlotSet('thing', None), SlotSet('place', None), SlotSet('time', None)]

@@ -1,14 +1,13 @@
 import numpy as np
 import sounddevice as sd
 from TTS.api import TTS
+import logging
 
+logging.disable(logging.CRITICAL)
 tts = TTS("tts_models/en/ljspeech/vits")
 
-
-print(TTS().list_models().list_models())
-print(TTS().list_models().list_langs())
-
-
+#print(TTS().list_models().list_models())
+#print(TTS().list_models().list_langs())
 
 def play(txt: str):
     wav = tts.tts(txt)
