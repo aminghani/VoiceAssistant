@@ -12,6 +12,8 @@ entities:
   - thing
   - place
   - time
+  - amount
+  - number 
 
 slots:
   action:
@@ -34,6 +36,16 @@ slots:
     mappings:
     - type: from_entity
       entity: time
+  amount:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: amount
+  number:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: number
 
 actions:
   - action_doing

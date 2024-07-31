@@ -74,6 +74,8 @@ class ActionOnCommand(Action):
         thing = tracker.get_slot("thing")
         place = tracker.get_slot("place")
         time = tracker.get_slot("time")
+        amount = tracker.get_slot("amount")
+        number = tracker.get_slot("number")
 
         if action is None or thing is None:
             response = f"sorry, i did not understand your request."
@@ -115,6 +117,8 @@ class ActionOnCommand(Action):
         thing = tracker.get_slot("thing")
         place = tracker.get_slot("place")
         time = tracker.get_slot("time")
+        amount = tracker.get_slot("amount")
+        number = tracker.get_slot("number")
 
         if action is None or thing is None:
             response = f"sorry, i did not understand your request"
@@ -124,7 +128,9 @@ class ActionOnCommand(Action):
                 "action": action,
                 "thing": thing,
                 "place": place, 
-                "time": time
+                "time": time,
+                'amount': amount,
+                'number': number
             }
 
             response = f"ok, doing your request!"
