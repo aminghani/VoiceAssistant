@@ -56,6 +56,6 @@ num_partitions = 8
 partition_yaml(input_file, num_partitions)
 
 """
-yam = 'synt_sentences.yaml'
+yaml_file = 'synt_sentences.yaml'
 merge_lines(yaml_file)
 """
