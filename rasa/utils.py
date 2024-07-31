@@ -34,7 +34,7 @@ def partition_yaml(input_file, num_partitions):
     lines_per_partition = math.ceil(total_lines / num_partitions)
 
     # Create output directory
-    output_dir = './nlu2/partitioned_yaml'
+    output_dir = './partitioned_yaml'
     os.makedirs(output_dir, exist_ok=True)
 
     # Partition the file
