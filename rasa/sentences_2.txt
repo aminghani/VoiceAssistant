@@ -15,7 +15,6 @@
     "[<action>](action) the [<thing>](thing) in the [<place>](place).",
     "[<action>](action) the [<thing>](thing) at [<time>](time).",
     "[<action>](action) the [<thing>](thing)."
-
     "At [<time>](time), [<action>](action) [<number>](number) [<thing>](thing) in the [<place>](place) to [<amount>](amount) brightness.",
     "[<action>](action) [<number>](number) [<thing>](thing) in the [<place>](place) to [<amount>](amount) brightness.",
     "At [<time>](time), [<action>](action) [<number>](number) [<thing>](thing) to [<amount>](amount) brightness.",
@@ -31,7 +30,6 @@
     "[<action>](action) [<number>](number) [<thing>](thing).",
     "[<action>](action) [<thing>](thing) in the [<place>](place).",
     "[<action>](action) [<thing>](thing).",
-
     "In the [<place>](place), [<action>](action) [<number>](number) [<thing>](thing) to [<amount>](amount) at [<time>](time).",
     "[<action>](action) [<number>](number) [<thing>](thing) to [<amount>](amount) at [<time>](time).",
     "In the [<place>](place), [<action>](action) [<number>](number) [<thing>](thing) to [<amount>](amount).",
@@ -47,7 +45,6 @@
     "[<action>](action) [<number>](number) [<thing>](thing).",
     "[<action>](action) [<thing>](thing) at [<time>](time).",
     "[<action>](action) [<thing>](thing).",
-
     "Could you [<action>](action) [<number>](number) [<thing>](thing) to [<amount>](amount) in the [<place>](place) at [<time>](time)?",
     "Could you [<action>](action) [<number>](number) [<thing>](thing) to [<amount>](amount) at [<time>](time)?",
     "Could you [<action>](action) [<number>](number) [<thing>](thing) to [<amount>](amount) in the [<place>](place)?",
@@ -64,7 +61,6 @@
     "Could you [<action>](action) [<thing>](thing) in the [<place>](place)?",
     "Could you [<action>](action) [<thing>](thing) at [<time>](time)?",
     "Could you [<action>](action) [<thing>](thing)?",
-
     "[<action>](action) [<amount>](amount) of [<number>](number) [<thing>](thing) in the [<place>](place) at [<time>](time).",
     "[<action>](action) [<amount>](amount) of [<number>](number) [<thing>](thing) at [<time>](time).",
     "[<action>](action) [<amount>](amount) of [<number>](number) [<thing>](thing) in the [<place>](place).",
@@ -81,7 +77,6 @@
     "[<action>](action) [<thing>](thing) in the [<place>](place).",
     "[<action>](action) [<thing>](thing) at [<time>](time).",
     "[<action>](action) [<thing>](thing)."
-
     "At [<time>](time), in the [<place>](place), [<action>](action) [<number>](number) [<thing>](thing) to [<amount>](amount).",
     "At [<time>](time), [<action>](action) [<number>](number) [<thing>](thing) to [<amount>](amount).",
     "In the [<place>](place), [<action>](action) [<number>](number) [<thing>](thing) to [<amount>](amount).",
@@ -98,7 +93,6 @@
     "In the [<place>](place), [<action>](action) [<thing>](thing).",
     "At [<time>](time), [<action>](action) [<thing>](thing).",
     "[<action>](action) [<thing>](thing).",
-
     "Please [<action>](action) [<number>](number) [<thing>](thing) in the [<place>](place) to [<amount>](amount) at [<time>](time).",
     "Please [<action>](action) [<number>](number) [<thing>](thing) to [<amount>](amount) at [<time>](time).",
     "Please [<action>](action) [<number>](number) [<thing>](thing) in the [<place>](place) to [<amount>](amount).",
@@ -115,7 +109,6 @@
     "Please [<action>](action) [<thing>](thing) in the [<place>](place).",
     "Please [<action>](action) [<thing>](thing) at [<time>](time).",
     "Please [<action>](action) [<thing>](thing)."
-
     "[<action>](action) [<number>](number) [<thing>](thing) to [<amount>](amount) brightness at [<time>](time) in the [<place>](place).",
     "[<action>](action) [<number>](number) [<thing>](thing) to [<amount>](amount) brightness at [<time>](time).",
     "[<action>](action) [<number>](number) [<thing>](thing) to [<amount>](amount) brightness in the [<place>](place).",
@@ -132,7 +125,6 @@
     "[<action>](action) [<thing>](thing) in the [<place>](place).",
     "[<action>](action) [<thing>](thing) at [<time>](time).",
     "[<action>](action) [<thing>](thing).",
-
     "In the [<place>](place) at [<time>](time), [<action>](action) [<number>](number) [<thing>](thing) to [<amount>](amount).",
     "At [<time>](time), [<action>](action) [<number>](number) [<thing>](thing) to [<amount>](amount).",
     "In the [<place>](place), [<action>](action) [<number>](number) [<thing>](thing) to [<amount>](amount).",
@@ -149,7 +141,6 @@
     "In the [<place>](place), [<action>](action) [<thing>](thing).",
     "At [<time>](time), [<action>](action) [<thing>](thing).",
     "[<action>](action) [<thing>](thing).",
-
     "[<action>](action) [<amount>](amount) of [<number>](number) [<thing>](thing) at [<time>](time) in the [<place>](place).",
     "[<action>](action) [<amount>](amount) of [<number>](number) [<thing>](thing) at [<time>](time).",
     "[<action>](action) [<amount>](amount) of [<number>](number) [<thing>](thing) in the [<place>](place).",

@@ -31,6 +31,8 @@ def lower_(l):
 
 # Read all files
 sentences_raw = read_file('sentences_2.txt')
+sentences_raw_1 = read_file('sentences.txt')
+
 sentences = ast.literal_eval(''.join(sentences_raw))  # Safely evaluate the string as a Python expression
 
 actions = lower_(read('actions.txt')) # Skip the first line which is a variable declaration
@@ -40,7 +42,7 @@ times = lower_(read('times.txt'))
 amounts = lower_(read('amounts.txt'))
 numbers = lower_(read('numbers.txt'))
 
-
+"""
 gen_sentences = []
 for sen in tqdm(sentences):
     for act in actions:
@@ -67,3 +69,4 @@ final_list = drop_fraction_randomly(gen_sentences, drop_fraction=0.992)
 print(len(final_list))
 with open('synt_sentences_2.yaml', 'w') as file:
     yaml.dump(final_list, file)
+"""
