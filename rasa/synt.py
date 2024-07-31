@@ -47,25 +47,23 @@ for sen in tqdm(sentences):
         for pl in places:
             for th in things:
                 for ti in times:
-                    for am in amounts:
-                        for nu in numbers:
-                            s = sen
-                            if '<time>' in s:
-                                s = s.replace('<time>', ti)
-                            if '<place>' in s:
-                                s = s.replace('<place>', pl)
-                            if '<amount>' in s:
-                                s = s.replace('<amount>', am)
-                            if '<number>' in s:
-                                s = s.replace('<number>', nu)
+                    s = sen
+                    if '<time>' in s:
+                        s = s.replace('<time>', ti)
+                    if '<place>' in s:
+                        s = s.replace('<place>', pl)
+                    if '<amount>' in s:
+                        s = s.replace('<amount>', random.choice(amounts))
+                    if '<number>' in s:
+                        s = s.replace('<number>', random.choice(numbers))
 
-                            s = s.replace('<action>', act)
-                            s = s.replace('<thing>', th)
-                            gen_sentences.append(s)
+                    s = s.replace('<action>', act)
+                    s = s.replace('<thing>', th)
+                    gen_sentences.append(s)
 
 gen_sentences = list(set(gen_sentences))
 print(len(gen_sentences))
-final_list = drop_fraction_randomly(gen_sentences, drop_fraction=0.95)
+final_list = drop_fraction_randomly(gen_sentences, drop_fraction=0.992)
 print(len(final_list))
 with open('synt_sentences_2.yaml', 'w') as file:
     yaml.dump(final_list, file)
