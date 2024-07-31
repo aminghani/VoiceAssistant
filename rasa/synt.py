@@ -47,19 +47,21 @@ for sen in tqdm(sentences):
         for pl in places:
             for th in things:
                 for ti in times:
-                    s = sen
-                    if '<time>' in s:
-                        s = s.replace('<time>', ti)
-                    if '<place>' in s:
-                        s = s.replace('<place>', pl)
-                    if '<amount>' in s:
-                        s = s.replace('<amount>', pl)
-                    if '<number>' in s:
-                        s = s.replace('<number>', pl)
+                    for am in amounts:
+                        for nu in numbers:
+                            s = sen
+                            if '<time>' in s:
+                                s = s.replace('<time>', ti)
+                            if '<place>' in s:
+                                s = s.replace('<place>', pl)
+                            if '<amount>' in s:
+                                s = s.replace('<amount>', am)
+                            if '<number>' in s:
+                                s = s.replace('<number>', nu)
 
-                    s = s.replace('<action>', act)
-                    s = s.replace('<thing>', th)
-                    gen_sentences.append(s)
+                            s = s.replace('<action>', act)
+                            s = s.replace('<thing>', th)
+                            gen_sentences.append(s)
 
 gen_sentences = list(set(gen_sentences))
 print(len(gen_sentences))
