@@ -7,7 +7,7 @@ import logging
 logging.disable(logging.CRITICAL)
 recorder = AudioToTextRecorder(model='base')
 
-WAKE_UP_WORD = 'alex'
+WAKE_UP_WORD = 'alexa'
 
 def process():
     listening = False
