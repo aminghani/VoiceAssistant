@@ -1,0 +1,63 @@
+version: "3.1"
+
+stories:
+
+- story: understand path
+  steps:
+  - intent: command
+  - action: action_make_sure
+  - intent: affirmative
+  - action: action_doing
+  - action: action_restart
+
+- story: did not understand path
+  steps:
+  - intent: command
+  - action: action_make_sure
+  - intent: negative
+  - action: utter_didnotunderstand
+  - action: action_restart
+
+- story: 2 retry success
+  steps:
+  - intent: command
+  - action: action_make_sure
+  - intent: command
+  - action: action_make_sure
+  - intent: affirmative
+  - action: action_doing
+  - action: action_restart
+
+- story: 2 retry failed
+  steps:
+  - intent: command
+  - action: action_make_sure
+  - intent: command
+  - action: action_make_sure
+  - intent: negative
+  - action: utter_didnotunderstand
+  - action: action_restart
+
+- story: 2 retry success
+  steps:
+  - intent: command
+  - action: action_make_sure
+  - intent: command
+  - action: action_make_sure
+  - intent: command
+  - action: action_make_sure
+  - intent: affirmative
+  - action: action_doing
+  - action: action_restart
+
+- story: 2 retry failed
+  steps:
+  - intent: command
+  - action: action_make_sure
+  - intent: command
+  - action: action_make_sure
+  - intent: command
+  - action: action_make_sure
+  - intent: negative
+  - action: utter_didnotunderstand
+  - action: action_restart

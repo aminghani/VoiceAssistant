@@ -1,0 +1,4 @@
+tts-server --model_name tts_models/en/ljspeech/tacotron2-DDC --use_cuda true
+tts-server --model_name tts_models/en/ljspeech/fast_pitch --use_cuda true
+tts-server --model_name  tts_models/en/vctk/vits --use_cuda true
+ tts_models/en/vctk/vits

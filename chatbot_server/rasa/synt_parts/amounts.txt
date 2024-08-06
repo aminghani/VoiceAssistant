@@ -1,0 +1,1 @@
+1, 2, 3, 100, 1 second, 5 seconds, 30 seconds, 1 minute, 15 minutes, 30 minutes, 20 celsius, 68 fahrenheit, 1 degree, low, medium, high, volume level 1, volume level 10, 10 dB, 50 dB, 100 lumens, 500 lumens, dim, bright, 1 meter, 5 meters, 3 feet, 10 feet, 5 inches, 12 inches, 10 watts, 100 watts, 1000 RPM

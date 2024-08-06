@@ -1,0 +1,1 @@
+make,set,Turn On,Open,Show,Play,Start,Change,go to,switch over to,Change,Set,previous,last,Open,set,Turn On,Turn off,Set,Decrease,Set,Turn on,Activate
